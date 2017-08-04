@@ -21,12 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJR-LQ-qK3">
-                                <rect key="frame" x="132" y="28" width="111" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1Y-ZX-XSS">
                                 <rect key="frame" x="34" y="120" width="306" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -51,19 +45,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sUb-20-U75">
+                                <rect key="frame" x="62.5" y="28" width="250" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="qPm-X5-osl"/>
+                                </constraints>
+                                <color key="textColor" red="0.88338226079940796" green="0.34684336185455322" blue="0.15831285715103149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4Ey-ZH-N0I" firstAttribute="centerX" secondItem="m1Y-ZX-XSS" secondAttribute="centerX" id="4Xh-Xt-7L1"/>
-                            <constraint firstItem="qJR-LQ-qK3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FEx-xX-Qwm"/>
+                            <constraint firstItem="m1Y-ZX-XSS" firstAttribute="top" secondItem="sUb-20-U75" secondAttribute="bottom" constant="8" id="9AO-dN-Sox"/>
                             <constraint firstItem="62w-eH-vXy" firstAttribute="top" secondItem="eih-8f-hiQ" secondAttribute="bottom" constant="8" id="N2r-AK-29c"/>
                             <constraint firstItem="4Ey-ZH-N0I" firstAttribute="top" secondItem="m1Y-ZX-XSS" secondAttribute="bottom" constant="8" id="OBi-Vw-x2F"/>
-                            <constraint firstItem="m1Y-ZX-XSS" firstAttribute="top" secondItem="qJR-LQ-qK3" secondAttribute="bottom" constant="8" id="T7c-LC-Z3x"/>
-                            <constraint firstItem="qJR-LQ-qK3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZTx-s7-HNk"/>
+                            <constraint firstItem="sUb-20-U75" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="SZR-hT-INc"/>
+                            <constraint firstItem="m1Y-ZX-XSS" firstAttribute="centerX" secondItem="sUb-20-U75" secondAttribute="centerX" id="Za5-IQ-1dL"/>
                             <constraint firstItem="eih-8f-hiQ" firstAttribute="top" secondItem="4Ey-ZH-N0I" secondAttribute="bottom" constant="8" id="jhY-vy-g3T"/>
+                            <constraint firstItem="sUb-20-U75" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lvg-15-ilB"/>
                             <constraint firstItem="eih-8f-hiQ" firstAttribute="centerX" secondItem="m1Y-ZX-XSS" secondAttribute="centerX" id="myG-Gc-yeN"/>
                             <constraint firstItem="62w-eH-vXy" firstAttribute="centerX" secondItem="m1Y-ZX-XSS" secondAttribute="centerX" id="n54-X5-jUN"/>
-                            <constraint firstItem="qJR-LQ-qK3" firstAttribute="centerX" secondItem="m1Y-ZX-XSS" secondAttribute="centerX" id="qKd-O0-QIi"/>
                         </constraints>
                     </view>
                 </viewController>
